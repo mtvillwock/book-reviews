@@ -1,0 +1,9 @@
+<h1>Users#new</h1>
+
+<%= form_for(@user) do |f| %>
+<%= f.text_field :first_name %>
+<%= f.text_field :last_name %>
+<%= password_field_tag(:password) %>
+<%= password_field_tag(:password_confirmation) %>
+<%= email_field(:user, :email) %>
+<% end %>
